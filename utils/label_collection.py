@@ -1,5 +1,4 @@
 from PySide2 import QtWidgets, QtCore
-from PySide2.QtWidgets import *
 
 
 class LabelCollector(object):

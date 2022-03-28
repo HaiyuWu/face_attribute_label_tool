@@ -23,7 +23,9 @@ class MyUI(QtWidgets.QMainWindow):
         names = self.operation.isleft()
         if names:
             result = QtWidgets.QMessageBox.question(self, "Quit message",
-                                                    "Do you want to quit Without completing the unfinished labels?",
+                                                    "You have some uncompleted annotations! "
+                                                    "They will be discarded if the window is closed. "
+                                                    "Do you still want to close the window?",
                                                     QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
             if result == QtWidgets.QMessageBox.Yes:
                 self.delete(names)
