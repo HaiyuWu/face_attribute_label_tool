@@ -20,7 +20,9 @@ numpy==1.19.5
 
 ### Usage
 
-It is simply listing all 40 attributes on the right side. Once an image is selected by clicking "Open", you can annotate the attributes. If you done the work, you can click "Next" to continue the annotating work for the next image in this folder, or click "Prev" to double check the annotations. Of course, you can casually choose where to start and this project will save the annotation results simultaneously for you. However, if you close the window with some uncompleted annotations, a question will show up. If you click "Yes", they will be discarded.
+It is simply listing all 40 attributes on the right side. Once an image is selected by clicking "Open", you can annotate the attributes. If you have done the work, you can click "Next" to continue the annotating work for the next image in this folder, or click "Prev" to double check the annotations. Of course, you can casually choose where to start and this project will save the annotation results simultaneously for you. However, if you close the window with some uncompleted annotations, a question will show up. If you click "Yes", they will be discarded.
+
+**The annotation files will be saved in your/opened/image/path/results/.**
 
 ### Demo
 ![Interface](https://github.com/SteveXWu/face_attribute_label_tool/blob/main/demo/interface.png)
@@ -32,7 +34,7 @@ This annotation tool could be launched by the following commend
 python attr_label.py
 ```
 
-Also, you could use pyinstaller to package it as a .exe file on Windows system.
+Also, you could directly download the zipped file from [attr_annotation_tool](https://drive.google.com/file/d/1WbCv12G7hCzIA8fGArIyn-FYdrvKgL7T/view?usp=sharing), and launch the attr_label.exe to start your labeling work.
 
 # Final goals
 
