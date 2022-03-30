@@ -34,7 +34,13 @@ This annotation tool could be launched by the following commend
 python attr_label.py
 ```
 
-Also, you could directly download the zipped file from [attr_annotation_tool](https://drive.google.com/file/d/1WbCv12G7hCzIA8fGArIyn-FYdrvKgL7T/view?usp=sharing), and launch the attr_label.exe to start your labeling work.
+Also, you could directly download the zipped file from
+
+Windows: [attr_annotation_tool](https://drive.google.com/file/d/1WbCv12G7hCzIA8fGArIyn-FYdrvKgL7T/view?usp=sharing)
+
+IOS: [attr_annotation_tool](https://drive.google.com/file/d/1yFKelmIS-J6DEbOOXVWo-4omFwlyh3Uz/view?usp=sharing)
+
+and launch the attr_label to start your labeling work.
 
 # Final goals
 

@@ -2,7 +2,8 @@ from PySide2 import QtWidgets
 from PySide2.QtUiTools import *
 from utils.operation import Operation
 import os
-os.environ['QT_MAC_WANTS_LAYER'] = '1'
+# If you want to pack it on IOS system, just uncomment this line.
+# os.environ['QT_MAC_WANTS_LAYER'] = '1'
 
 
 class MyUI(QtWidgets.QMainWindow):
