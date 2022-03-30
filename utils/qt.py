@@ -2,12 +2,14 @@ from PySide2 import QtWidgets
 from PySide2.QtUiTools import *
 from utils.operation import Operation
 import os
+os.environ['QT_MAC_WANTS_LAYER'] = '1'
 
 
 class MyUI(QtWidgets.QMainWindow):
     def __init__(self, ui_file, parent=None):
         super(MyUI, self).__init__(parent=parent)
         # load ui file
+        print(ui_file)
         self.ui = QUiLoader().load(ui_file, self)
         # open image
         self.operation = Operation(self.ui)
