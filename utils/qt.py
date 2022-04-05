@@ -26,14 +26,15 @@ class MyUI(QtWidgets.QMainWindow):
         names = self.operation.isleft()
         if names:
             result = QtWidgets.QMessageBox.question(self, "Quit message",
-                                                    "You have some uncompleted annotations! "
-                                                    "They will be discarded if the window is closed. "
-                                                    "Do you still want to close the window?",
-                                                    QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
+                                                    "You have uncompleted annotations. "
+                                                    "Do you want to save the label anyway?",
+                                                    QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No |
+                                                    QtWidgets.QMessageBox.Cancel)
             if result == QtWidgets.QMessageBox.Yes:
-                self.delete(names)
                 pass
-            else:
+            elif result == QtWidgets.QMessageBox.No:
+                self.delete(names)
+            elif result == QtWidgets.QMessageBox.Cancel:
                 event.ignore()
 
     def delete(self, names):

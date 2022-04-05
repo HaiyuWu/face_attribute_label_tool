@@ -20,7 +20,7 @@ numpy==1.19.5
 
 ### Usage
 
-It is simply listing all 40 attributes on the right side. Once an image is selected by clicking "Open", you can annotate the attributes. If you have done the work, you can click "Next" to continue the annotating work for the next image in this folder, or click "Prev" to double check the annotations. Of course, you can casually choose where to start and this project will save the annotation results simultaneously for you. However, if you close the window with some uncompleted annotations, a question will show up. If you click "Yes", they will be discarded.
+It is simply listing all 40 attributes on the right side. Once an image is selected by clicking "Open", you can annotate the attributes. If you have done the work, you can click "Next" to continue the annotating work for the next image in this folder, or click "Prev" to double check the annotations. Of course, you can casually choose where to start and this project will save the annotation results simultaneously for you.
 
 **The annotation files will be saved in your/opened/image/path/results/.**
 
