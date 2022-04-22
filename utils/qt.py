@@ -7,13 +7,14 @@ import os
 
 
 class MyUI(QtWidgets.QMainWindow):
-    def __init__(self, ui_file, parent=None):
-        super(MyUI, self).__init__(parent=parent)
+    def __init__(self, ui_file, root):
+        super(MyUI, self).__init__()
         # load ui file
-        print(ui_file)
+        # print(ui_file)
+        self.root = root
         self.ui = QUiLoader().load(ui_file, self)
         # open image
-        self.operation = Operation(self.ui)
+        self.operation = Operation(self.ui, self.root)
         self.setMinimumWidth(677)
         self.setMinimumHeight(590)
         self.show()
@@ -23,6 +24,8 @@ class MyUI(QtWidgets.QMainWindow):
             self.operation.save()
         except Exception:
             pass
+        with open(self.root, "w") as f:
+            f.write(self.operation.get_root())
         names = self.operation.isleft()
         if names:
             result = QtWidgets.QMessageBox.question(self, "Quit message",

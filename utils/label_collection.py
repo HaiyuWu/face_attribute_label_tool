@@ -6,11 +6,13 @@ class LabelCollector(object):
         self.ui = ui
         self.label_buttons = {}
         self.uncertain_buttons = {}
+        self.names = {}
         for name, value in vars(self.ui).items():
             if isinstance(value, QtWidgets.QButtonGroup):
                 self.label_buttons[name] = value
             if isinstance(value, QtWidgets.QCheckBox):
                 self.uncertain_buttons[name] = value
+
         self.label_buttons = sorted(self.label_buttons.items(), key=lambda x: int(x[0].split("_")[-1]))
 
         self.labels = [-1] * 40
@@ -31,6 +33,18 @@ class LabelCollector(object):
                 self.uncertain[index] = 1
         # print(self.labels)
 
+    def button_init(self, labels, uncertains):
+        for index, ((_, label_button), (_, uncertain_button)) in enumerate(
+                zip(self.label_buttons, self.uncertain_buttons.items())):
+            label_button.setExclusive(False)
+            for j, btn in enumerate(label_button.buttons()):
+                if labels[index] != -1 and labels[index] == j:
+                    btn.setChecked(True)
+                else:
+                    btn.setChecked(False)
+            uncertain_button.setChecked(uncertains[index] == 1)
+            label_button.setExclusive(True)
+
     def label_list(self):
         return self.labels
 
@@ -44,15 +58,3 @@ class LabelCollector(object):
 
     def isfinished(self):
         return bool(-1 not in self.labels)
-
-    def button_init(self, labels, uncertains):
-        for index, ((_, label_button), (_, uncertain_button)) in enumerate(
-                zip(self.label_buttons, self.uncertain_buttons.items())):
-            label_button.setExclusive(False)
-            for j, btn in enumerate(label_button.buttons()):
-                if labels[index] != -1 and labels[index] == j:
-                    btn.setChecked(True)
-                else:
-                    btn.setChecked(False)
-            uncertain_button.setChecked(uncertains[index] == 1)
-            label_button.setExclusive(True)
