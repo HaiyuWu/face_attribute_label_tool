@@ -1,4 +1,5 @@
 from PySide2 import QtWidgets
+from PySide2.QtCore import *
 from PySide2.QtUiTools import *
 from utils.operation import Operation
 import os
@@ -7,14 +8,17 @@ import os
 
 
 class MyUI(QtWidgets.QMainWindow):
-    def __init__(self, ui_file, root):
+    def __init__(self, ui_file):
         super(MyUI, self).__init__()
         # load ui file
         # print(ui_file)
-        self.root = root
         self.ui = QUiLoader().load(ui_file, self)
+        self.setting = QSettings('tmp/.temp', QSettings.IniFormat)
+        self.last_path = self.setting.value('LastFilePath')
+        if self.last_path is None:
+            self.last_path = '/'
         # open image
-        self.operation = Operation(self.ui, self.root)
+        self.operation = Operation(self.ui, self.last_path)
         self.setMinimumWidth(677)
         self.setMinimumHeight(590)
         self.show()
@@ -24,8 +28,7 @@ class MyUI(QtWidgets.QMainWindow):
             self.operation.save()
         except Exception:
             pass
-        with open(self.root, "w") as f:
-            f.write(self.operation.get_root())
+        self.setting.setValue('LastFilePath', self.operation.get_dir())
         names = self.operation.isleft()
         if names:
             result = QtWidgets.QMessageBox.question(self, "Quit message",

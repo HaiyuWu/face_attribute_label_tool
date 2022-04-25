@@ -20,6 +20,5 @@ def resource_path(relative_path):
 
 app = QApplication(sys.argv)
 ui_file = resource_path("myUI.ui")
-root_file = resource_path("root.txt")
-ui = MyUI(ui_file, root_file)
+ui = MyUI(ui_file)
 app.exec_()

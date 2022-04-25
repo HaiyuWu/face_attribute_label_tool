@@ -9,18 +9,18 @@ import numpy as np
 
 # next, prev, open
 class Operation(object):
-    def __init__(self, ui, root):
+    def __init__(self, ui, last_path):
         self.ui = ui
         self.image_path = None
         self.im_list = None
         self.old_path = None
         self.directory = None
+        self.last_path = last_path
         self.current_index = None
         self.image_name = ""
         self.lcollector = None
         self.not_finished = []
         self.save_path = ""
-        self.open_root = self._get_root(root)
         self.name_label = self.ui.ImageName
         # open an image
         self.open_image = self.ui.OpenImg.clicked.connect(self.open_image)
@@ -29,20 +29,14 @@ class Operation(object):
         self.next_image = self.ui.NextImg.clicked.connect(lambda: self._op("next"))
         self.prev_image = self.ui.PrevImg.clicked.connect(lambda: self._op("prev"))
 
-    def _get_root(self, path):
-        with open(path, "r") as f:
-            root = f.read()
-        return root
-
-    def get_root(self):
-        return self.open_root
+    def get_dir(self):
+        return self.directory
 
     def open_image(self):
-        self.image_path, _ = QFileDialog.getOpenFileName(self.ui, "Choose an image", rf"{self.open_root}",
+        self.image_path, _ = QFileDialog.getOpenFileName(self.ui, "Choose an image", rf"{self.last_path}",
                                                          "types(*.png *.jpg *.bmp *.JPG *.PNG)")
         if self.image_path:
             self.directory = os.path.abspath(os.path.join(self.image_path, os.pardir))
-            self.open_root = self.directory
             self.save_path = self.directory + "/results/"
             if not os.path.exists(self.save_path):
                 os.makedirs(self.save_path)
@@ -83,29 +77,35 @@ class Operation(object):
         self.reset()
 
     def save(self):
-        label, uncertain = self.lcollector.label_list(), self.lcollector.uncertain_list()
+        label, occluded = self.lcollector.label_list(), self.lcollector.occluded_list()
         if sum(label) != -40:
             image_name = self.image_name
             npy_label_file = f"{self.save_path}{image_name}_label.npy"
-            npy_uncertain_file = f"{self.save_path}{self.image_path.split('/')[-1].split('.')[0]}_uncertain.npy"
+            npy_occluded_file = f"{self.save_path}{self.image_path.split('/')[-1].split('.')[0]}_occluded.npy"
             # print(label)
             np.save(npy_label_file, label)
-            np.save(npy_uncertain_file, uncertain)
+            np.save(npy_occluded_file, occluded)
 
     def reset(self):
         npys = os.listdir(self.save_path)
         target_label = f"{self.image_name}_label.npy"
-        target_uncertain = f"{self.image_name}_uncertain.npy"
+        target_occluded = f"{self.image_name}_occluded.npy"
         if target_label not in npys:
             labels = [-1] * 40
-            uncertains = [0] * 40
+            occludeds = [0] * 40
             image_name = self.image_name
             npy_label_file = f"{self.save_path}{image_name}_label.npy"
-            npy_uncertain_file = f"{self.save_path}{image_name}_uncertain.npy"
-            self.not_finished.append((npy_label_file, npy_uncertain_file))
+            npy_occluded_file = f"{self.save_path}{image_name}_occluded.npy"
+            np.save(npy_label_file, labels)
+            np.save(npy_occluded_file, occludeds)
+            self.not_finished.append((npy_label_file, npy_occluded_file))
         else:
             labels = np.load(self.save_path + target_label)
-            uncertains = np.load(self.save_path + target_uncertain)
-        self.lcollector.set_lists(labels, uncertains)
+            try:
+                occludeds = np.load(self.save_path + target_occluded)
+            except Exception:
+                occludeds = [0] * 40
+                np.save(self.save_path + target_occluded, occludeds)
+        self.lcollector.set_lists(labels, occludeds)
 
 

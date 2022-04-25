@@ -34,27 +34,13 @@ This annotation tool could be launched by the following commend
 python attr_label.py
 ```
 
-Also, you could directly download the App from
+Also, you could directly download the zipped file from
 
-Windows: [attr_annotation_tool](https://drive.google.com/file/d/1TnRfiEiZDk_zDoL_GtqNpMCNfVZIpG8m/view?usp=sharing)
+Windows: [attr_annotation_tool](https://drive.google.com/file/d/15YBa-ggw4qvt5XTOiQdS50_xPO_Op5pJ/view?usp=sharing)
 
 IOS: [attr_annotation_tool](https://drive.google.com/file/d/1D7iBEol89kmIzjD7Rd-ob5_r9oE3x43D/view?usp=sharing)
 
 and launch the attr_label to start your labeling work.
-
-### Packing
-
-There are two UI forms could be chosen to pack:
-
-[myUI_or.ui](https://github.com/SteveXWu/face_attribute_label_tool/blob/main/myUI_or.ui) has the same label sequence as the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
-
-[myUI.ui](https://github.com/SteveXWu/face_attribute_label_tool/blob/main/myUI.ui) is the grouped version, where the attributes are grouped by the position. It is more convenient to annotate them, but the labels in the npy file are also in the same sequence as the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
-
-*The current packed app is based on [myUI.ui](https://github.com/SteveXWu/face_attribute_label_tool/blob/main/myUI.ui).*
-
-### TODO:
-
-Make a convert button to collect the labels into one csv file.
 
 # Final goals
 
