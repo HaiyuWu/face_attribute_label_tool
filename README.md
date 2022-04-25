@@ -36,7 +36,7 @@ python attr_label.py
 
 Also, you could directly download the App from
 
-Windows: [attr_annotation_tool](https://drive.google.com/file/d/15YBa-ggw4qvt5XTOiQdS50_xPO_Op5pJ/view?usp=sharing)
+Windows: [attr_annotation_tool](https://drive.google.com/file/d/1TnRfiEiZDk_zDoL_GtqNpMCNfVZIpG8m/view?usp=sharing)
 
 IOS: [attr_annotation_tool](https://drive.google.com/file/d/1D7iBEol89kmIzjD7Rd-ob5_r9oE3x43D/view?usp=sharing)
 
