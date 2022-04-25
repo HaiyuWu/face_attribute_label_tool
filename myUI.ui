@@ -15,7 +15,7 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_44">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_43">
+    <layout class="QHBoxLayout" name="horizontalLayout_43" stretch="10,6">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_44" stretch="0,10">
        <item>
@@ -89,7 +89,7 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>569</width>
+            <width>426</width>
             <height>2759</height>
            </rect>
           </property>
@@ -1824,45 +1824,45 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_1"/>
-  <buttongroup name="buttonGroup_28"/>
-  <buttongroup name="buttonGroup_23"/>
-  <buttongroup name="buttonGroup_29"/>
-  <buttongroup name="buttonGroup_10"/>
-  <buttongroup name="buttonGroup_24"/>
-  <buttongroup name="buttonGroup_32"/>
-  <buttongroup name="buttonGroup_21"/>
-  <buttongroup name="buttonGroup_37"/>
-  <buttongroup name="buttonGroup_27"/>
-  <buttongroup name="buttonGroup_26"/>
-  <buttongroup name="buttonGroup_35"/>
-  <buttongroup name="buttonGroup_38"/>
-  <buttongroup name="buttonGroup_25"/>
-  <buttongroup name="buttonGroup_34"/>
-  <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup_12"/>
-  <buttongroup name="buttonGroup_6"/>
-  <buttongroup name="buttonGroup_17"/>
-  <buttongroup name="buttonGroup_14"/>
-  <buttongroup name="buttonGroup_22"/>
-  <buttongroup name="buttonGroup_8"/>
-  <buttongroup name="buttonGroup_40"/>
-  <buttongroup name="buttonGroup_7"/>
-  <buttongroup name="buttonGroup_13"/>
-  <buttongroup name="buttonGroup_20"/>
-  <buttongroup name="buttonGroup_4"/>
-  <buttongroup name="buttonGroup_36"/>
-  <buttongroup name="buttonGroup_15"/>
-  <buttongroup name="buttonGroup_39"/>
-  <buttongroup name="buttonGroup_18"/>
-  <buttongroup name="buttonGroup_9"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup_30"/>
   <buttongroup name="buttonGroup_19"/>
-  <buttongroup name="buttonGroup_31"/>
-  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_9"/>
+  <buttongroup name="buttonGroup_22"/>
+  <buttongroup name="buttonGroup_26"/>
+  <buttongroup name="buttonGroup_12"/>
+  <buttongroup name="buttonGroup_27"/>
+  <buttongroup name="buttonGroup_25"/>
+  <buttongroup name="buttonGroup_35"/>
   <buttongroup name="buttonGroup_11"/>
-  <buttongroup name="buttonGroup_16"/>
+  <buttongroup name="buttonGroup_18"/>
+  <buttongroup name="buttonGroup_20"/>
+  <buttongroup name="buttonGroup_30"/>
   <buttongroup name="buttonGroup_33"/>
+  <buttongroup name="buttonGroup_8"/>
+  <buttongroup name="buttonGroup_28"/>
+  <buttongroup name="buttonGroup_17"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_15"/>
+  <buttongroup name="buttonGroup_16"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_40"/>
+  <buttongroup name="buttonGroup_13"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_23"/>
+  <buttongroup name="buttonGroup_1"/>
+  <buttongroup name="buttonGroup_32"/>
+  <buttongroup name="buttonGroup_24"/>
+  <buttongroup name="buttonGroup_7"/>
+  <buttongroup name="buttonGroup_6"/>
+  <buttongroup name="buttonGroup_34"/>
+  <buttongroup name="buttonGroup_10"/>
+  <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup_39"/>
+  <buttongroup name="buttonGroup_14"/>
+  <buttongroup name="buttonGroup_29"/>
+  <buttongroup name="buttonGroup_36"/>
+  <buttongroup name="buttonGroup_21"/>
+  <buttongroup name="buttonGroup_31"/>
+  <buttongroup name="buttonGroup_38"/>
+  <buttongroup name="buttonGroup_37"/>
  </buttongroups>
 </ui>
