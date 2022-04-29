@@ -43,6 +43,8 @@ class Operation(object):
 
             self.im_list = glob(
                  self.directory + f"/*.{self.image_path.split('.')[-1]}")
+            # fixed the order bug on IOS platform
+            self.im_list.sort()
             self.lcollector = LabelCollector(self.ui)
             self.im_list = self._clean_path()
             self.current_index = self.im_list.index(self.image_path)
