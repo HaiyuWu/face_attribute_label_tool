@@ -26,8 +26,8 @@ class Operation(object):
         self.open_image = self.ui.OpenImg.clicked.connect(self.open_image)
         # collect results from input
         # next image
-        self.next_image = self.ui.NextImg.clicked.connect(lambda: self._op("next"))
-        self.prev_image = self.ui.PrevImg.clicked.connect(lambda: self._op("prev"))
+        self.next_image = self.ui.NextImg.clicked.connect(lambda: self.op("next"))
+        self.prev_image = self.ui.PrevImg.clicked.connect(lambda: self.op("prev"))
 
     def get_dir(self):
         return self.directory
@@ -51,7 +51,7 @@ class Operation(object):
     def _clean_path(self):
         return list(map(lambda x: x.replace("\\", "/"), self.im_list))
 
-    def _op(self, status):
+    def op(self, status):
         if self.im_list:
             if status == "next" and self.current_index < len(self.im_list) - 1:
                 self.current_index += 1

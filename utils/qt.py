@@ -23,6 +23,12 @@ class MyUI(QtWidgets.QMainWindow):
         self.setMinimumHeight(590)
         self.show()
 
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_A:
+            self.operation.op("prev")
+        if event.key() == Qt.Key_D:
+            self.operation.op("next")
+
     def closeEvent(self, event):
         try:
             self.operation.save()

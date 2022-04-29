@@ -135,7 +135,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_5">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -177,7 +177,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_25">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -219,7 +219,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_23">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -261,7 +261,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_17">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -303,7 +303,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_31">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -345,7 +345,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -387,7 +387,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_22">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -429,7 +429,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_21">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -471,7 +471,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_29">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -513,7 +513,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_6">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -555,7 +555,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_34">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -597,7 +597,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_33">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -639,7 +639,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_12">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -681,7 +681,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_18">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -723,7 +723,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_10">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -765,7 +765,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_16">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -807,7 +807,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_8">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -849,7 +849,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_20">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -891,7 +891,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_35">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -933,7 +933,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_36">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -975,7 +975,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_39">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1017,7 +1017,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_38">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1059,7 +1059,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_11">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1101,7 +1101,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_37">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1143,7 +1143,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_13">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1185,7 +1185,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_9">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1227,7 +1227,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_28">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1269,7 +1269,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_19">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1311,7 +1311,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_32">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1353,7 +1353,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_30">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1395,7 +1395,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_24">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1437,7 +1437,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_3">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1479,7 +1479,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_15">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1521,7 +1521,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_2">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1563,7 +1563,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_26">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1605,7 +1605,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_7">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1647,7 +1647,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_4">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1689,7 +1689,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_14">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1731,7 +1731,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_27">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1773,7 +1773,7 @@
                  <item>
                   <widget class="QCheckBox" name="checkBox_40">
                    <property name="text">
-                    <string>occulded</string>
+                    <string>occluded</string>
                    </property>
                   </widget>
                  </item>
@@ -1797,7 +1797,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Prev</string>
+            <string>Prev(A)</string>
            </property>
           </widget>
          </item>
@@ -1809,7 +1809,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Next</string>
+            <string>Next(D)</string>
            </property>
           </widget>
          </item>
@@ -1824,45 +1824,45 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_19"/>
-  <buttongroup name="buttonGroup_9"/>
-  <buttongroup name="buttonGroup_22"/>
-  <buttongroup name="buttonGroup_26"/>
-  <buttongroup name="buttonGroup_12"/>
-  <buttongroup name="buttonGroup_27"/>
-  <buttongroup name="buttonGroup_25"/>
-  <buttongroup name="buttonGroup_35"/>
-  <buttongroup name="buttonGroup_11"/>
-  <buttongroup name="buttonGroup_18"/>
-  <buttongroup name="buttonGroup_20"/>
-  <buttongroup name="buttonGroup_30"/>
-  <buttongroup name="buttonGroup_33"/>
-  <buttongroup name="buttonGroup_8"/>
+  <buttongroup name="buttonGroup_13"/>
   <buttongroup name="buttonGroup_28"/>
   <buttongroup name="buttonGroup_17"/>
+  <buttongroup name="buttonGroup_25"/>
+  <buttongroup name="buttonGroup_37"/>
+  <buttongroup name="buttonGroup_35"/>
+  <buttongroup name="buttonGroup_24"/>
+  <buttongroup name="buttonGroup_34"/>
+  <buttongroup name="buttonGroup_9"/>
+  <buttongroup name="buttonGroup_10"/>
+  <buttongroup name="buttonGroup_19"/>
+  <buttongroup name="buttonGroup_26"/>
+  <buttongroup name="buttonGroup_18"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_12"/>
+  <buttongroup name="buttonGroup_38"/>
+  <buttongroup name="buttonGroup_8"/>
+  <buttongroup name="buttonGroup_20"/>
+  <buttongroup name="buttonGroup_30"/>
+  <buttongroup name="buttonGroup_29"/>
+  <buttongroup name="buttonGroup_7"/>
+  <buttongroup name="buttonGroup_36"/>
+  <buttongroup name="buttonGroup_22"/>
+  <buttongroup name="buttonGroup_40"/>
+  <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup_16"/>
+  <buttongroup name="buttonGroup_14"/>
+  <buttongroup name="buttonGroup_39"/>
+  <buttongroup name="buttonGroup_27"/>
+  <buttongroup name="buttonGroup_32"/>
+  <buttongroup name="buttonGroup_23"/>
+  <buttongroup name="buttonGroup_6"/>
+  <buttongroup name="buttonGroup_1"/>
+  <buttongroup name="buttonGroup_11"/>
+  <buttongroup name="buttonGroup_21"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_31"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_15"/>
-  <buttongroup name="buttonGroup_16"/>
-  <buttongroup name="buttonGroup_3"/>
-  <buttongroup name="buttonGroup_40"/>
-  <buttongroup name="buttonGroup_13"/>
-  <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup_23"/>
-  <buttongroup name="buttonGroup_1"/>
-  <buttongroup name="buttonGroup_32"/>
-  <buttongroup name="buttonGroup_24"/>
-  <buttongroup name="buttonGroup_7"/>
-  <buttongroup name="buttonGroup_6"/>
-  <buttongroup name="buttonGroup_34"/>
-  <buttongroup name="buttonGroup_10"/>
-  <buttongroup name="buttonGroup_4"/>
-  <buttongroup name="buttonGroup_39"/>
-  <buttongroup name="buttonGroup_14"/>
-  <buttongroup name="buttonGroup_29"/>
-  <buttongroup name="buttonGroup_36"/>
-  <buttongroup name="buttonGroup_21"/>
-  <buttongroup name="buttonGroup_31"/>
-  <buttongroup name="buttonGroup_38"/>
-  <buttongroup name="buttonGroup_37"/>
+  <buttongroup name="buttonGroup_33"/>
  </buttongroups>
 </ui>
