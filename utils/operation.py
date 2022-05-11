@@ -1,5 +1,6 @@
 from utils.label_collection import LabelCollector
 from utils.im_show import ImShow
+from PySide2.QtCore import *
 from PySide2.QtWidgets import *
 from PySide2 import QtCore
 from glob import glob
@@ -9,16 +10,21 @@ import numpy as np
 
 # next, prev, open
 class Operation(object):
-    def __init__(self, ui, last_path):
+    def __init__(self, ui):
         self.ui = ui
         self.image_path = None
         self.im_list = None
         self.old_path = None
         self.directory = None
-        self.last_path = last_path
         self.current_index = None
         self.image_name = ""
         self.lcollector = None
+
+        self.setting = QSettings('tmp/.temp', QSettings.IniFormat)
+        self.last_path = self.setting.value('LastFilePath')
+        if self.last_path is None:
+            self.last_path = '/'
+
         self.not_finished = []
         self.save_path = ""
         self.name_label = self.ui.ImageName
@@ -37,6 +43,8 @@ class Operation(object):
                                                          "types(*.png *.jpg *.bmp *.JPG *.PNG)")
         if self.image_path:
             self.directory = os.path.abspath(os.path.join(self.image_path, os.pardir))
+            self.setting.setValue('LastFilePath', self.directory)
+            self.last_path = self.setting.value('LastFilePath')
             self.save_path = self.directory + "/results/"
             if not os.path.exists(self.save_path):
                 os.makedirs(self.save_path)
